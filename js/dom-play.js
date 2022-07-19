@@ -4,10 +4,27 @@
  
 // console.log(actors);
 
-function highlight(){
+// = is assignment == is comparison 
 
+function myAlert(){
+    alert("I'm clicked");
 }
- 
-// event is click / event handler is on-click
+
+let spans = document.querySelectorAll("#play span");
+
+console.log(spans);
+
+for(const mySpan of spans){
+    mySpan.addEventListener("click",myAlert);
+}
+
+function highlight(el){
+
+    if(el.style.backgroundColor == "yellow"){
+        el.style.backgroundColor="white";
+    }else{
+        el.style.backgroundColor='yellow';
+    }
+}
 
 
